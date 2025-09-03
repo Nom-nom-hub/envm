@@ -1,7 +1,7 @@
 {
   "name": "envm",
   "version": "1.0.0",
-  "description": "Env File Manager CLI tool",
+  "description": "Advanced Env file Manager CLI tool - Multi-environment management, encryption, and security",
   "main": "src/index.js",
   "bin": {
     "envm": "./bin/envm"
@@ -9,11 +9,62 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "packageManager": "npm@10.0.0",
+  "scripts": {
+    "test": "node src/index.js --help",
+    "preinstall": "node --version | grep -q v18 || echo 'Warning: Node.js >=18.0.0 recommended'",
+    "postinstall": "echo '\n🚀 envm installed! Run \"envm --help\" to get started.\n'"
+  },
+  "keywords": [
+    "environment",
+    "env",
+    "dotenv",
+    "cli",
+    "tool",
+    "encryption",
+    "security",
+    "multi-environment",
+    "developer-tools",
+    "backup",
+    "validation",
+    "git",
+    "gitignore",
+    "configuration-management"
+  ],
+  "homepage": "https://github.com/nom-nom-hub/envm#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nom-nom-hub/envm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nom-nom-hub/envm/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Env File Manager Team",
+    "email": "hello@envm.tools"
+  },
+  "maintainers": [
+    {
+      "name": "Env File Manager Team",
+      "email": "hello@envm.tools"
+    }
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/nom-nom-hub"
+  },
   "dependencies": {
     "commander": "^12.0.0",
     "dotenv": "^16.3.1",
     "js-yaml": "^4.1.0"
   },
-  "author": "",
-  "license": "MIT"
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": false,
+  "os": ["linux", "darwin", "win32"],
+  "cpu": ["x64", "arm64"],
+  "preferGlobal": true,
+  "private": false
 }

@@ -1,13 +1,18 @@
-# Environment files
+# Environment files (security - may contain sensitive data)
 .env
 .env.*
 *.encrypted
+!*.encrypted.example  # Example encrypted files are okay
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Development local storage
+.envm/
+
+# IDE and text editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -17,10 +22,81 @@ yarn-error.log*
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.tmp
+*.log
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Node modules (should be in gitignore, not in npmignore)
+node_modules/
+
+# npm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+.nyc_output/
+*.lcov
+
+# Build artifacts
+dist/
+build/
+.cache/
+
+# MacOS filesystem diagrams
+*.volicon
+
+# Temporary files
+.tmp/
+temp/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Test files (but keep test infrastructure)
+**/.test-results/
+**/test-data/
+compressed-test_*.env

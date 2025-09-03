@@ -26,28 +26,64 @@ A comprehensive CLI tool for managing environment files (`.env`) with advanced f
 
 ### Installation
 
-#### Global Installation (Recommended)
+#### Option 1: NPM (Recommended)
 ```bash
+# Install globally
 npm install -g envm
+
+# Verify installation
+envm --version
+envm --help
 ```
 
-#### Local Installation
+#### Option 2: Homebrew (macOS/Linux)
 ```bash
+# Add our tap (when published)
+brew tap envm/tap
+brew install envm
+
+# Or install directly from formula
+brew install nom-nom-hub/envm/envm
+```
+
+#### Option 3: Linux Installation Script
+```bash
+# Download and run the installer
+curl -fsSL https://raw.githubusercontent.com/nom-nom-hub/envm/main/install.sh | bash
+
+# Or download manually and run
+wget https://raw.githubusercontent.com/nom-nom-hub/envm/main/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+#### Option 4: Manual Installation
+```bash
+# Clone the repository
 git clone https://github.com/nom-nom-hub/envm.git
 cd envm
+
+# Install dependencies
 npm install
+
+# Link globally (preferred)
 npm link
+
+# Or use directly
+npx envm --help
+
+# Alternative global installation
+npm install -g .
 ```
 
-#### Manual Installation
+#### Option 5: Docker
 ```bash
-git clone https://github.com/nom-nom-hub/envm.git
-cd envm
-npm install
-# Make the binary executable
-chmod +x bin/envm
-# Add to PATH or create symlink
-sudo ln -s $(pwd)/bin/envm /usr/local/bin/envm
+# Run in Docker container
+docker run --rm -v $(pwd):/app envm/envm --help
+
+# Or build locally
+docker build -t envm .
+docker run --rm -v $(pwd):/app envm
 ```
 
 ### Basic Usage
@@ -154,7 +190,7 @@ Create backup of environment files.
 envm backup
 
 # Create named backup
-envm backup pre-deploy-2024
+envm backup pre-deploy-2025
 
 # Create compressed backup
 envm backup nightly --compress
@@ -186,7 +222,7 @@ Restore environment files from backup.
 envm restore my-backup
 
 # Restore from timestamp
-envm restore 2024-09-01_14-30-00
+envm restore 2025-09-01_14-30-00
 
 # Force restore (overwrite existing files)
 envm restore my-backup --force

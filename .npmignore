@@ -1,0 +1,81 @@
+# Environment files (security - may contain sensitive data)
+.env
+.env.*
+*.encrypted
+
+# Test files
+test/
+tests/
+*_test.js
+*.test.*
+
+# Local development storage
+.envm/
+.envm/
+
+# IDE and text editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.log
+
+# Git and version control
+.git/
+.gitignore
+.github/
+
+# Documentation (keep README for npm, exclude others)
+PRD.md
+DISTRO.md
+CHANGELOG.md
+docs/
+
+# Development files
+node_modules/
+*.tgz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.lerna
+
+# Build artifacts and caches
+dist/
+build/
+.cache/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports
+coverage/
+.nyc_output/
+*.lcov
+
+# Temporary files
+.tmp/
+temp/
+messages/
+
+# Package manager lock files (excluded for npm publishing)
+package-lock.json
+yarn.lock
+
+# Local development files
+.envrc
+.editorconfig
+.prettierrc
+.eslintrc
+.eslintignore
+.tsconfig.json

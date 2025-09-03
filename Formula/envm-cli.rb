@@ -5,7 +5,7 @@
 class EnvmCli < Formula
   desc "Advanced Env file Manager CLI tool - Multi-environment management, encryption, and security"
   homepage "https://github.com/nom-nom-hub/envm"
-  url "https://registry.npmjs.org/envm/-/envm-1.0.0.tgz"
+  url "https://registry.npmjs.org/@nom-nom-hub/envm/-/envm-1.0.0.tgz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000" # Will be updated after first npm publish
   license "MIT"
 

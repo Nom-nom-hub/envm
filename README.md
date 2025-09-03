@@ -91,7 +91,7 @@ envm switch production
 #### Option 1: NPM (Recommended)
 ```bash
 # Install globally
-npm install -g envm
+npm install -g @nom-nom-hub/envm
 
 # Verify installation
 envm --version

@@ -13,7 +13,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-PACKAGE_NAME="envm"
+PACKAGE_NAME="@nom-nom-hub/envm"
 NPM_PACKAGE="@nom-nom-hub/envm"
 
 echo -e "${BLUE}🚀 Env File Manager (envm) Installer${NC}"

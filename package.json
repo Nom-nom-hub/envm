@@ -1,5 +1,5 @@
 {
-  "name": "envm",
+  "name": "@nom-nom-hub/envm",
   "version": "1.0.0",
   "description": "Advanced Env file Manager CLI tool - Multi-environment management, encryption, and security",
   "main": "src/index.js",

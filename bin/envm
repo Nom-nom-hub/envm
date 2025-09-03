@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+try {
+  require('../src/index.js');
+} catch (error) {
+  console.error('Error loading envm CLI:', error.message);
+  process.exit(1);
+}
